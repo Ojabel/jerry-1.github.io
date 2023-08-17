@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(image/px3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.head .logo{
+    color: whitesmoke;
+    font-size: large;
+    border: 1px solid whitesmoke;
+    width: max-content;
+    padding: 2px 4px;
+    border-bottom: gold 1px solid;
+    border-top: gold 1px solid;
+    border-left: rgb(18, 134, 57) 2px solid;
+    margin-left: 4px;
+    border-radius: 3px 6px;
+    transition: 1s ease-in;
+}
+#home{
+    background-color: green;
+}
+#home img{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    font-weight: 9px;
+}
+.head .nav{
+    margin-top: 3px;
+    display: flex;
+    justify-content:center;
+    margin-right: 9px;
+    font-size: 12px;
+}/* Navbar container */
+.nav {
+    overflow: hidden;
+   background-color: rgba(119, 136, 153, 0.548);
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown-content a img{
+     margin-right: 10px;
+     position: relative;
+     top: 10px;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .nav a:hover, .dropdown:hover .dropbtn {
+    border-bottom: 4px solid green;
+    background-color: rgba(0, 0, 0, 0.616);
+    transition: 1s ease-in-out;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+   
+}
+.main .info{
+    color: rgb(4, 75, 13);
+    font-size:3em; 
+}
+.info section{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#view {
+  width: 600px;
+  height: 600px;
+  border-radius: 7px;
+  background: url(image/v1.jpg);
+  background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  animation: view 55s infinite;
+  border: 2px solid white;
+}
+#view label{
+    color: whitesmoke;
+    font-size: x-large;
+    margin-left: 70px;
+}
+.explo{
+    background-color: transparent;
+    margin-left: 110px;
+    position: relative;
+    left: 300px;
+    top: -50px;
+    border: none;
+}
+.explo a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.603);
+    font-size: 22px;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border-bottom: rgb(26, 131, 52) 2px solid;
+    
+}
+
+
+@keyframes view{
+    0%{
+        background-image: url(image/v6.jpg);
+    }
+    15%{
+        background-image: url(image/v5.jpg);
+    }
+    30%{
+        background-image: url(image/v3.jpg);
+    }
+    45%{
+        background-image: url(image/v4.jpg);
+    }
+    50%{
+        background-image: url(image/v7.jpg);
+    }
+    65%{
+        background-image: url(image/v8.jpg);
+    } 
+    80%{
+        background-image: url(image/v11.jpg);
+    }
+    100%{
+        background-image: url(image/v10.jpg);
+    }
+    
+}
+
+
+
+
+/*...........small screen............*/
+@media (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: grid;
+        justify-content: center;
+        background-image: url(image/px3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .head .logo{
+        color: whitesmoke;
+        font-size: small;
+        border: 1px solid whitesmoke;
+        width: max-content;
+        padding: 2px 4px;
+        border-bottom: gold 1px solid;
+        border-top: gold 1px solid;
+        border-left: rgb(18, 134, 57) 2px solid;
+        margin-left: 4px;
+        border-radius: 3px 6px;
+        transition: 1s ease-in;
+    }
+    #home{
+      
+        background-color: green;
+        font-size: 11px;
+    }
+   
+    .head .nav{
+        margin-top: 3px;
+        display: flex;
+        justify-content:center;
+        margin-right: 9px;
+        font-size: 12px;
+    }/* Navbar container */
+    .nav {
+        overflow: hidden;
+       background-color: rgba(119, 136, 153, 0.548);
+        font-family: Arial;
+      }
+      
+      /* Links inside the navbar */
+      .nav a {
+        float: left;
+        font-size: 11px;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+      
+      /* The dropdown container */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 11px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+      .nav a:hover, .dropdown:hover .dropbtn {
+        border-bottom: 4px solid green;
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: 1s ease-in-out;
+      }
+      
+      /* Dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 49px;
+       
+    }
+    .main .info{
+        color: rgb(4, 75, 13);
+        font-size:1.3em; 
+        margin-bottom: 10px;
+      position: relative;
+      right: 30px;
+    }
+    .info section{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    #view {
+      width: 280px;
+      height: 280px;
+      border-radius: 7px;
+      margin-bottom: 20px;
+      background: url(image/v1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: view 55s infinite;
+      border: 2px solid white;
+    }
+    #view label{
+        color: whitesmoke;
+        font-size: large;
+        margin-left: 70px;
+    }
+    .explo{
+        border: none;
+        background-color: transparent;
+        margin-left: 110px;
+        margin-bottom: 100px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .explo button{
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.603);
+        font-size: 22px;
+        font-weight: bolder;
+        border: 2px solid whitesmoke;
+        padding: 2px 5px;
+        border-radius: 5px;
+        border-bottom: rgb(26, 131, 52) 2px solid;
+        
+    }
+    .explo button:hover{
+        font-size: 24px;
+    }
+    
+    @keyframes view{
+        0%{
+            background-image: url(image/v6.jpg);
+        }
+        15%{
+            background-image: url(image/v5.jpg);
+        }
+        30%{
+            background-image: url(image/v3.jpg);
+        }
+        45%{
+            background-image: url(image/v4.jpg);
+        }
+        50%{
+            background-image: url(image/v7.jpg);
+        }
+        65%{
+            background-image: url(image/v8.jpg);
+        } 
+        80%{
+            background-image: url(image/v11.jpg);
+        }
+        95%{
+            background-image: url(image/v10.jpg);
+        }
+        
+    }
+    
+}

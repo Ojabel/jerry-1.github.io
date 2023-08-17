@@ -1,0 +1,88 @@
+
+#get-started{
+    margin-top: 250px;
+  
+    
+ }
+h2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    position: sticky;
+    top: 5px;
+
+}
+section{
+  
+    text-align: center;
+}
+.home{
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.work{
+    text-align: center;
+    font-size:xx-large;
+}
+.dev{
+    text-align: left;
+    font-size: small;
+}
+
+/*............smallee screen....*/
+@media (max-width:600px) {
+    body{
+        display: grid;
+        justify-content: center;
+    }
+   #get-started{
+        margin-top: 250px;
+     }
+    h2{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.685);
+        color: white;
+        position: sticky;
+        top: 5px;
+    
+    }
+    section{
+      
+        text-align: center;
+    }
+    .home{
+        position: sticky;
+        top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .home button{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+    .work{
+        text-align: center;
+        font-size:large;
+    }
+    .dev{
+        text-align: left;
+        font-size: 12px ;
+    }
+   .list a img{
+        width: 350px;
+    }
+}
